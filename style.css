@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background:black;
+    color: white;
+    background-repeat: no-repeat;
+    margin-left: 150px;
+    
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    /*margin-left: 150px;*/
+    margin-right: 150px;
+}
+.nav-links{
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 400;
+    color:white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+button{
+    background-color: rgb(230, 83, 60);
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 5px;
+    
+}
+
+.heading2{
+    
+   max-width:520px;
+   /* margin-left: 150px;*/
+    margin-right: 150px;
+    font-weight: 900px;
+    font-size: 4.8rem;
+
+}
+.paragraph1{
+    
+    max-width: 520px;
+    /*margin-left: 150px;*/
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+       /* margin-left: 150px;*/
+        max-width: 520px;
+        gap: 50px;
+    }
+    .btn1{
+        color:  rgba(255, 255, 255, 0.5);
+        background-color: rgb(230, 83, 60) ;
+        border: none;
+        border-radius: 16px;
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .btn2{
+        background-color: black;
+        border: 1px  white solid;
+        color:  rgba(255, 255, 255, 0.5);
+        
+        border-radius: 16px;
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .image{
+        max-width: 520px;
+        margin-top: 50px;
+        
+    }
+    .img1{
+        width: 100%;
+    }
+    .banner{
+        display: flex;
+        flex-direction: row;
+    }
+    @media screen and (max-width:576px){
+        .banner{
+            flex-direction: column;
+            
+        }
+        body{
+            margin-left: 5px;
+        }
+    }
+        
