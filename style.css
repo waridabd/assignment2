@@ -640,6 +640,7 @@ body{
            display: none;
             
         }
+        
         .third-section{
             flex-direction: column;
             align-items: center;
@@ -686,9 +687,7 @@ body{
         .footer-div{
             flex-direction: column;
         }
-        .upper-box{
-          display: none;
-        }
+        p
        
         .footer-end{
       text-align: left;
