@@ -184,6 +184,7 @@ body{
     .bar-img{
       width: 40px;
       height: 40px;
+      
     }
     .bar{
       display: none;
@@ -556,14 +557,20 @@ body{
     font-weight: 500;
    }
    .footer-para{
+    align-items: center;
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
     font-weight: 400;
+    padding-top: 40px;
    }
    .jhamela{
     width: 33.3%;
    }
    .link-footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
     line-height: 24px;
@@ -579,6 +586,7 @@ body{
     color: rgba(255,255,255,0.5);
     font-size: 1.2rem;
     margin-bottom: 10px;
+    padding-bottom: 20px;
   }
   .des-heading{
     font-weight: 500px;
@@ -723,7 +731,7 @@ body{
             height: 45px;
         }
         .des-pics{
-          grid-template-rows: 100px 100px 100px 100px;
+          grid-template-rows: repeat(4,1);
           gap: 10px;
         }
     }
