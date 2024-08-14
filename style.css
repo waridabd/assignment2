@@ -55,12 +55,14 @@ body{
 }
 .banner{
   margin-left: 150px;
+ 
 }
 .banner-img{
     position: relative;
     
     height: 100%;
 }
+
 .upper-box{
     width:193px;
     height:98px;
@@ -123,6 +125,7 @@ body{
     
 }
 .heading1{
+  max-width: 500px;
     font-size: 2rem;
     font-weight: 400;
     color: rgb(230, 83, 60) ;
@@ -178,6 +181,13 @@ body{
         margin-top: 50px;
         
     }
+    .bar-img{
+      width: 40px;
+      height: 40px;
+    }
+    .bar{
+      display: none;
+    }
     .img1{
         width: 100%;
     }
@@ -188,7 +198,7 @@ body{
     .third-section{
         height: auto;
         max-width: 1000px;
-        margin-top: 50px;
+        margin-top: 100px;
         display: flex;
         flex-direction: row;
         gap: 100px;
@@ -234,6 +244,9 @@ body{
     .calculator{
    
         text-align:center;
+      }
+      .bmi{
+        margin-top: 100px;
       }
       .bmi-name{
         max-width: 670px;
@@ -298,10 +311,10 @@ body{
     
       /* TAble Styles */
       .chart{
-        width:443px;
+       max-width:443px;
         height:386px;
         text-align:left;
-        margin-left:50px;
+        margin-left:159px;
         
       }
     
@@ -381,6 +394,9 @@ body{
     margin: 0 auto;
     text-align: center;
    }
+   .habit-sec{
+    margin-top: 100px;
+   }
  .habits{
   max-width: 500px;
  }
@@ -397,6 +413,9 @@ body{
        line-height: 24px;
        color: rgba(255, 255, 255, 0.5);
        
+    }
+    .fourth-para{
+      margin-top: 100px;
     }
     .team-img{
         height: 272px;
@@ -519,15 +538,17 @@ body{
    .footer{
     max-width: 1000px;
     
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 150px;
    
     background: rgba(255,255,255,0.1);
+    border-radius: 16px;
     
    }
    .footer-div{
     display: flex;
     flex-direction: row;
+    margin-left: 20px;
    }
    .footer-heading{
     color: rgb(230, 83, 60);
@@ -559,6 +580,13 @@ body{
     font-size: 1.2rem;
     margin-bottom: 10px;
   }
+  .des-heading{
+    font-weight: 500px;
+    color: #d1c89ee0;
+  }
+  .des-para{
+    font-size: 1.2rem;
+  }
 
 
 
@@ -569,6 +597,20 @@ body{
       .header, .habit-sec, .third-section, .description, .fourth-para{
         margin-left: 5px;
       }
+      .navigation{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 150px;
+        /*margin-right: 150px;*/
+    }
+    .bar{
+      margin-top: 20px;
+      display: flex;
+    }
+    .nav-link{
+      display: none;
+    }
         .banner{
             flex-direction: column;
             align-items: center;
@@ -635,6 +677,9 @@ body{
         .footer-div{
             flex-direction: column;
         }
+        .upper-box{
+          display: none;
+        }
         .footer-end{
       text-align: left;
         }
@@ -643,7 +688,7 @@ body{
         }
         .container{
             flex-direction: column;
-            width: 394px;
+           width: 100%;
             height: auto;
             margin: 0 auto;
             gap: 30px;
@@ -651,13 +696,15 @@ body{
         .chart{
             width: 100%;
             margin: 0 auto;
-            padding: 20px;
+            padding: 5px;
+            margin-left: 5px;
 
         }
         .form{
             width: 100%;
             margin: 0 auto;
             padding: 20px;
+            margin-right: 5px;
         }
         .container-title{
             font-size: 1rem;
