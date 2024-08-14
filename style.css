@@ -8,21 +8,27 @@
   font-weight: 400;
   font-style: normal;
 }
+.header, .habit-sec, .third-section, .description, .fourth-para{
+  margin-left: 150px;
+}
+.header{
+  margin-left: 300px;
+}
 body{
     max-width: 1400px;
     margin: 0 auto;
     background:black;
     color: white;
     background-repeat: no-repeat;
-    margin-left: 150px;
+   /* margin-left: 150px;*/
     
 }
 .navigation{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    /*margin-left: 150px;*/
-    margin-right: 150px;
+    margin-left: 150px;
+    /*margin-right: 150px;*/
 }
 .nav-links{
     display: flex;
@@ -40,6 +46,9 @@ body{
     color:white;
     font-size: 1.2rem;
     margin-top: 10px;
+}
+.banner{
+  margin-left: 150px;
 }
 .banner-img{
     position: relative;
@@ -115,7 +124,7 @@ body{
 
 .heading2{
     
-   max-width:520px;
+   max-width:500px;
    /* margin-left: 150px;*/
     margin-right: 150px;
     font-weight: 800px;
@@ -123,7 +132,7 @@ body{
 
 }
 .paragraph1{
-    
+    max-width: 500px;
     
     /*margin-left: 150px;*/
     font-size: 1rem;
@@ -150,8 +159,8 @@ body{
     }
     .btn2{
         background-color: black;
-        border: none;
-        color:  rgba(255, 255, 255, 0.5);
+        border: 1px solid white;
+        color: rgba(255, 255, 255, 0.5);
         
         border-radius: 16px;
         font-size: 1rem;
@@ -224,10 +233,39 @@ body{
         max-width: 670px;
         margin: 0 auto;
       }
+      .description{
+        margin-top: 100px;
+        max-width: 1000px;
+        margin-left: 10px;
+     min-height: 450px;
+    margin: 0 auto;
+    background-image: url(images/exercise2.png);
+    background-color: rgba(0,0,0, 0.5);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    border-radius: 16px;
+ 
+      }
+     
+      .des-pics{
+        padding-top: 50px;
+        margin-top: 50px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100px 100px;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+       
+      }
 
       .container{
+        margin-right: 0;
         
-        max-width:1440px;
+        max-width:1500px;
         height:450px;
         margin:0 auto;
         background:rgb(34,34,34);
@@ -330,13 +368,16 @@ body{
         border-radius: 16px;
         border: none;
       }
+      
    .team, .habits{
     margin-top: 100px;
     max-width: 670px;
     margin: 0 auto;
     text-align: center;
    }
-
+ .habits{
+  max-width: 500px;
+ }
     
     .heading4{
        
@@ -473,6 +514,7 @@ body{
     max-width: 1000px;
     
     margin-top: 50px;
+    margin-left: 150px;
    
     background: rgba(255,255,255,0.1);
     
@@ -518,6 +560,9 @@ body{
 
        
     @media screen and (max-width:576px){
+      .header, .habit-sec, .third-section, .description, .fourth-para{
+        margin-left: 5px;
+      }
         .banner{
             flex-direction: column;
             align-items: center;
@@ -526,9 +571,15 @@ body{
         body{
             margin-left: 5px;
         }
+        
+        
         .paragraph1{
             text-align: left;
             width: 100%;
+            display: flex;
+        }
+        .upper-box{
+          display: none;
         }
         .nav-links{
            display: none;
@@ -539,7 +590,7 @@ body{
             align-items: center;
             height: auto;
             width: 100%;
-            padding: 0;
+            padding: 0px;
         }
         .image2{
             justify-items: flex-start;
@@ -551,6 +602,7 @@ body{
         .fourth-para{
             align-items: center;
         }
+        
         /*.btn{
             flex-direction: column;
         }*/
@@ -566,10 +618,15 @@ body{
         .habits,.heading4,.para4{
             text-align: left;
         }
+        
        
         .footer{
             width: 100%;
             height: auto;
+            margin-left: 10px;
+        }
+        .navigation,.banner{
+          margin-left: 20px;
         }
         .footer-div{
             flex-direction: column;
@@ -613,6 +670,10 @@ body{
         #activity{
             width: 348px;
             height: 45px;
+        }
+        .des-pics{
+          grid-template-rows: 100px 100px 100px 100px;
+          gap: 10px;
         }
     }
         
