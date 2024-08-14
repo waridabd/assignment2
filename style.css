@@ -113,6 +113,7 @@ button{
     }
     .third-heading{
         font-size: 3rem;
+        text-align: left;
         
     }
     .second-para{
@@ -120,7 +121,7 @@ button{
         font-weight: 400;
         color: rgba(255, 255, 255, 0.5);
         line-height: 24px;
-
+        text-align:left;
     }
     .run{
         max-width: 443px;
@@ -141,7 +142,8 @@ button{
         border-radius: 16px;
         font-size: 0.8rem;
     }
-   .team{
+   .team, .habits{
+    margin-top: 50px;
     max-width: 670px;
     margin: 0 auto;
     text-align: center;
@@ -161,6 +163,11 @@ button{
        color: rgba(255, 255, 255, 0.5);
        
     }
+    .team-img{
+        height: 272px;
+        width:321px;
+        border-radius: 16px;
+       }
     .pictures{
         margin-top: 50px;
         display: grid;
@@ -169,11 +176,7 @@ button{
         
         
     }
-  .team-img{
-    height: 272px;
-    width: 321px;
-    border-radius: 16px;
-   }
+  
    .a1{
     position: relative;
    }
@@ -238,6 +241,173 @@ button{
     font-weight: 400;
     font-size: 1rem;
    }
+   .habit-img{
+    border-radius: 90px;
+   
+   }
+   .habit-pics{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+   
+   }
+   .habit-heading{
+    text-align: left;
+    font-size: 1.2rem;
+    max-width:230px;
+    margin-left: 60px;
+    font-weight: 500;
+   
+   }
+   .all{
+    width:  100%;
+    height: auto;
+    margin: 0 auto;
+   }
+   .para1{
+    text-align: center;
+    font-size: 1rem;
+    color:  rgba(255, 255, 255, 0.5);
+    max-width: 230px;
+   }
+   .footer-head{
+    padding-left: 40px;
+    font-size: 3rem;
+    font-weight: 400;
+   }
+   .footer-links{
+    display: flex;
+    flex-direction: column;
+   }
+   .footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    
+   }
+   .footer-heading{
+    color: rgb(230, 83, 60);
+    font-size: 3rem;
+    font-weight: 500;
+   }
+   .footer-para{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+   }
+   .jhamela{
+    width: 33.3%;
+   }
+   .link-footer{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    line-height: 24px;
+   }
+   .line{
+    color:rgba(255, 255, 255, 0.5) ;
+   }
+   
+
+  .calculator{
+   
+    text-align:center;
+  }
+  .container{
+    
+    max-width:1000px;
+    height:450px;
+    margin:0 auto;
+    background:rgb(34,34,34);
+    display:flex;
+    justify-content:space-around;
+    gap:60px;
+  }
+  .container-title{
+    font-size:1.75rem;
+    font-weight:900;
+  }
+
+  /* TAble Styles */
+  .chart{
+    width:443px;
+    height:386px;
+    text-align:left;
+    margin-left:50px;
+    
+  }
+
+  table{
+    border-collapse:collapse;
+    width:310px;
+    height:216px;
+  }
+
+  td,th{
+    border:1px solid rgba(255,255,255,0.1);
+  }
+
+  td{
+    font-size:0.875rem;
+    color:rgba(255,255,255,0.5);
+    padding:15px;
+  }
+  th{
+    padding:15px;
+  }
+
+  /* Form Style */
+  .form{
+    width:577px;
+    height:386px;
+    text-align:left;
+    margin-right:159px;
+    
+  }
+
+  .container-description{
+    font-size:0.875rem;
+    color:rgba(255,255,255,0.5);
+    margin-top:14px;
+  }
+
+  input{
+    width:260px;
+    height:48px;
+    border-radius:8px;
+    background:rgba(255,255,255,0.1);
+    margin:5px 5px 5px 0px;
+    
+  }
+
+  #sex{
+    width:270px;
+    height:48px;
+    border-radius:8px;
+    background:rgba(255,255,255,0.1);
+    color:rgba(255,255,255,0.5);
+    margin:5px 5px5px 0px;
+    
+  }
+  #activity{
+    width:547px;
+    height:48px;
+    border-radius:8px;
+    background:rgba(255,255,255,0.1);
+    color:rgba(255,255,255,0.5);
+    margin:5px 5px 5px 0px;
+    
+  }
+  .btn-primary{
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+  }
+
+
+
+
+
        
     @media screen and (max-width:576px){
         .banner{
@@ -250,6 +420,7 @@ button{
         }
         .nav-links{
             flex-direction: column;
+            
         }
         .third-section{
             flex-direction: column;
@@ -261,6 +432,18 @@ button{
         }
         .fourth-para{
             align-items: center;
+        }
+        .btn{
+            flex-direction: column;
+        }
+        .habit-pics{
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .container{
+            flex-direction: column;
+            height: auto;
         }
     }
         
