@@ -9,7 +9,7 @@
   font-style: normal;
 }
 body{
-    max-width: 1440px;
+    max-width: 1400px;
     margin: 0 auto;
     background:black;
     color: white;
@@ -18,6 +18,7 @@ body{
     
 }
 .navigation{
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     /*margin-left: 150px;*/
@@ -27,6 +28,7 @@ body{
     display: flex;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
+    align-items: center;
 }
 .nav-item{
     list-style: none;
@@ -39,7 +41,63 @@ body{
     font-size: 1.2rem;
     margin-top: 10px;
 }
-button{
+.banner-img{
+    position: relative;
+    
+    height: 100%;
+}
+.upper-box{
+    width:193px;
+    height:98px;
+    box-sizing:border-box;
+    border:1pxsolidrgba(255,255,255,0.1);border-radius:12px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.1);
+    text-align:center;
+    
+    position: absolute;
+    top: 20%;
+    
+   right: -5%;
+    
+  }
+
+  .lower-box{
+    width:193px;
+    height:98px;
+    box-sizing:border-box;
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:12px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.1);
+    text-align:center;
+    position: absolute;
+    
+    top: 80%;
+    left: 0%;
+    
+    
+  
+   
+  }
+  .box-title{
+    font-size: 2.5rem ;
+    font-weight:600;
+    color:white;
+    margin-top:5px;
+    margin-bottom:5px;
+    
+  }
+  .box-description{
+    font-size:0.8rem;
+    font-weight:400;
+    color:rgba(255,255,255,0.65);
+    margin-top:5px;
+  }
+
+
+
+.button1{
     background-color: rgb(230, 83, 60);
     border: none;
     border-radius: 16px;
@@ -49,29 +107,37 @@ button{
     padding: 5px;
     
 }
+.heading1{
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(230, 83, 60) ;
+}
 
 .heading2{
     
    max-width:520px;
    /* margin-left: 150px;*/
     margin-right: 150px;
-    font-weight: 900px;
+    font-weight: 800px;
     font-size: 4.8rem;
 
 }
 .paragraph1{
     
-    max-width: 520px;
+    
     /*margin-left: 150px;*/
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
     }
     .btn{
         display: flex;
         flex-direction: row;
        /* margin-left: 150px;*/
         max-width: 520px;
-        gap: 50px;
+        gap: 5%;
     }
     .btn1{
         color:  rgba(255, 255, 255, 0.5);
@@ -84,7 +150,7 @@ button{
     }
     .btn2{
         background-color: black;
-        border: 1px  white solid;
+        border: none;
         color:  rgba(255, 255, 255, 0.5);
         
         border-radius: 16px;
@@ -105,10 +171,15 @@ button{
         flex-direction: row;
     }
     .third-section{
+        height: auto;
+        max-width: 1000px;
         margin-top: 50px;
         display: flex;
         flex-direction: row;
         gap: 100px;
+        background:rgba(255,255,255,0.1) ;
+        padding: 10px;
+        border-radius: 16px;
       
     }
     .third-heading{
@@ -124,12 +195,14 @@ button{
         text-align:left;
     }
     .run{
-        max-width: 443px;
+        width: 50%;
     }
     .image2{
-        margin-top: 50px;
+        margin-top: 30px;
         max-width: 366px;
         height: 312px;
+        max-width: 50%;
+        margin-bottom: 30px;
         
     }
     .img2{
@@ -141,9 +214,124 @@ button{
         background-color: rgb(230, 83, 60);
         border-radius: 16px;
         font-size: 0.8rem;
+        border: none;
     }
+    .calculator{
+   
+        text-align:center;
+      }
+      .bmi-name{
+        max-width: 670px;
+        margin: 0 auto;
+      }
+
+      .container{
+        
+        max-width:1440px;
+        height:450px;
+        margin:0 auto;
+        background:rgb(34,34,34);
+        display:flex;
+        justify-content:space-around;
+        gap:60px;
+      }
+      .section-title{
+        font-size: 3rem;
+        text-align: left;
+        
+      }
+      .section-description{
+      font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 24px;
+        text-align:left;
+      }
+      .container-title{
+        font-size:1.75rem;
+        font-weight:900;
+      }
+    
+      /* TAble Styles */
+      .chart{
+        width:443px;
+        height:386px;
+        text-align:left;
+        margin-left:50px;
+        
+      }
+    
+      table{
+        border-collapse:collapse;
+        width:310px;
+        height:216px;
+      }
+    
+      td,th{
+        border:1px solid rgba(255,255,255,0.1);
+      }
+    
+      td{
+        font-size:0.875rem;
+        color:rgba(255,255,255,0.5);
+        padding:15px;
+      }
+      th{
+        padding:15px;
+      }
+    
+      /* Form Style */
+      .form{
+        width:577px;
+        height:386px;
+        text-align:left;
+        margin-right:159px;
+        
+      }
+    
+      .container-description{
+        font-size:0.875rem;
+        color:rgba(255,255,255,0.5);
+        margin-top:14px;
+      }
+    
+      input{
+        width:260px;
+        height:48px;
+        border-radius:8px;
+        background:rgba(255,255,255,0.1);
+        margin:5px 5px 5px 0px;
+        
+      }
+    
+      #sex{
+        width:270px;
+        height:48px;
+        border-radius:8px;
+        background:rgba(255,255,255,0.1);
+        color:rgba(255,255,255,0.5);
+        margin:5px 5px5px 0px;
+        
+      }
+      #activity{
+        width:547px;
+        height:48px;
+        border-radius:8px;
+        background:rgba(255,255,255,0.1);
+        color:rgba(255,255,255,0.5);
+        margin:5px 5px 5px 0px;
+        
+      }
+      .btn-primary{
+        margin-top: 10px;
+        padding: 10px 30px 10px 30px;
+        background-color: rgb(230, 83, 60);
+        color:rgba(255, 255, 255, 0.5) ;
+        border-radius: 16px;
+        border: none;
+      }
    .team, .habits{
-    margin-top: 50px;
+    margin-top: 100px;
     max-width: 670px;
     margin: 0 auto;
     text-align: center;
@@ -282,10 +470,16 @@ button{
     flex-direction: column;
    }
    .footer{
+    max-width: 1000px;
+    
+    margin-top: 50px;
+   
+    background: rgba(255,255,255,0.1);
+    
+   }
+   .footer-div{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
-    
    }
    .footer-heading{
     color: rgb(230, 83, 60);
@@ -310,98 +504,12 @@ button{
    }
    
 
-  .calculator{
-   
-    text-align:center;
-  }
-  .container{
-    
-    max-width:1000px;
-    height:450px;
-    margin:0 auto;
-    background:rgb(34,34,34);
-    display:flex;
-    justify-content:space-around;
-    gap:60px;
-  }
-  .container-title{
-    font-size:1.75rem;
-    font-weight:900;
-  }
-
-  /* TAble Styles */
-  .chart{
-    width:443px;
-    height:386px;
-    text-align:left;
-    margin-left:50px;
-    
-  }
-
-  table{
-    border-collapse:collapse;
-    width:310px;
-    height:216px;
-  }
-
-  td,th{
-    border:1px solid rgba(255,255,255,0.1);
-  }
-
-  td{
-    font-size:0.875rem;
-    color:rgba(255,255,255,0.5);
-    padding:15px;
-  }
-  th{
-    padding:15px;
-  }
-
-  /* Form Style */
-  .form{
-    width:577px;
-    height:386px;
-    text-align:left;
-    margin-right:159px;
-    
-  }
-
-  .container-description{
-    font-size:0.875rem;
-    color:rgba(255,255,255,0.5);
-    margin-top:14px;
-  }
-
-  input{
-    width:260px;
-    height:48px;
-    border-radius:8px;
-    background:rgba(255,255,255,0.1);
-    margin:5px 5px 5px 0px;
-    
-  }
-
-  #sex{
-    width:270px;
-    height:48px;
-    border-radius:8px;
-    background:rgba(255,255,255,0.1);
-    color:rgba(255,255,255,0.5);
-    margin:5px 5px5px 0px;
-    
-  }
-  #activity{
-    width:547px;
-    height:48px;
-    border-radius:8px;
-    background:rgba(255,255,255,0.1);
-    color:rgba(255,255,255,0.5);
-    margin:5px 5px 5px 0px;
-    
-  }
-  .btn-primary{
-    margin-top: 10px;
-    padding: 10px 30px 10px 30px;
+  
+  .footer-end{
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
 
 
@@ -418,13 +526,23 @@ button{
         body{
             margin-left: 5px;
         }
+        .paragraph1{
+            text-align: left;
+            width: 100%;
+        }
         .nav-links{
-            flex-direction: column;
+           display: none;
             
         }
         .third-section{
             flex-direction: column;
             align-items: center;
+            height: auto;
+            width: 100%;
+            padding: 0;
+        }
+        .image2{
+            justify-items: flex-start;
         }
         .pictures{
             grid-template-columns: repeat(1,321px);
@@ -433,17 +551,68 @@ button{
         .fourth-para{
             align-items: center;
         }
-        .btn{
+        /*.btn{
             flex-direction: column;
+        }*/
+        .form{
+            margin-right: 5px;
         }
         .habit-pics{
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             
+        }
+        .habits,.heading4,.para4{
+            text-align: left;
+        }
+       
+        .footer{
+            width: 100%;
+            height: auto;
+        }
+        .footer-div{
+            flex-direction: column;
+        }
+        .footer-end{
+      text-align: left;
+        }
+        .jhamela{
+            width: 100%;
         }
         .container{
             flex-direction: column;
+            width: 394px;
             height: auto;
+            margin: 0 auto;
+            gap: 30px;
+        }
+        .chart{
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+        .form{
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container-title{
+            font-size: 1rem;
+        }
+        input{
+            width: 160px;
+            height: 45px;
+        }
+        #sex{
+            width: 165px;
+            height: 45px;
+
+        }
+        #activity{
+            width: 348px;
+            height: 45px;
         }
     }
         
