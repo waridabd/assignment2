@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -8,6 +8,12 @@
   font-weight: 400;
   font-style: normal;
 }
+.miama-font{
+font-family: 'Miama', sans-serif;
+font-size: 5rem;
+font-weight: 400;
+}
+                                                
 .header, .habit-sec, .third-section, .description, .fourth-para{
   margin-left: 150px;
 }
@@ -578,9 +584,7 @@ body{
             width: 100%;
             display: flex;
         }
-        .upper-box{
-          display: none;
-        }
+       
         .nav-links{
            display: none;
             
