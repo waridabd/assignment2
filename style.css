@@ -567,6 +567,7 @@ body{
     width: 33.3%;
    }
    .link-footer{
+    text-decoration: none;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -688,6 +689,7 @@ body{
         .upper-box{
           display: none;
         }
+       
         .footer-end{
       text-align: left;
         }
