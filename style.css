@@ -822,6 +822,10 @@ body{
         .container-title{
             font-size: 1rem;
         }
+        .container-description{
+          width: 80%;
+
+        }
         input{
             width: 160px;
             height: 45px;
