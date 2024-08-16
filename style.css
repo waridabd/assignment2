@@ -17,9 +17,9 @@ font-weight: 400;
 .header, .habit-sec, .third-section, .description, .fourth-para{
   margin-left: 150px;
 }
-/*.header{
+.header{
   margin-left: 300px;
-}*/
+  }
 .trainer{
   max-width: 50%;
 }
@@ -35,6 +35,7 @@ body{
    /* margin-left: 150px;*/
     
 }
+
 .navigation{
     margin-top: 10px;
     display: flex;
@@ -81,7 +82,7 @@ body{
 
 .upper-box{
     max-width:500px;
-    height:98px;
+    min-height:98px;
     box-sizing:border-box;
     border:1px solid rgba(255,255,255,0.1);border-radius:12px;
     backdrop-filter:blur(20px);
@@ -96,6 +97,8 @@ body{
   }
 
   .lower-box{
+    display: flex;
+    gap: 10px;
     max-width:500px;
     height:98px;
     box-sizing:border-box;
@@ -108,11 +111,15 @@ body{
     padding: 10px 20px 10px 20px;
     top: 90%;
     left: -20%;
-    
-    
-  
-   
-  }
+    }
+    .dot{
+      height: 30px;
+      width: 30px;
+      background-color: rgb(230, 83, 60);
+      border-radius: 50%;
+      margin-top: 22%;
+      
+    }
   .box-title{
     font-size: 2.5rem ;
     font-weight:600;
@@ -361,7 +368,7 @@ body{
     
       table{
         border-collapse:collapse;
-        width:310px;
+        max-width:310px;
         height:216px;
       }
     
@@ -380,7 +387,7 @@ body{
     
       /* Form Style */
       .form{
-        width:577px;
+        max-width:577px;
         height:386px;
         text-align:left;
         margin-right:159px;
@@ -388,7 +395,7 @@ body{
       }
     
       .container-description{
-        width: 577px;
+        max-width: 577px;
         font-size:0.875rem;
         color:rgba(255,255,255,0.5);
         margin-top:14px;
@@ -404,7 +411,7 @@ body{
       }
     
       #sex{
-        width:270px;
+       width:270px;
         height:48px;
         border-radius:8px;
         background:rgba(255,255,255,0.1);
@@ -681,8 +688,9 @@ body{
           
         }
         body{
-            margin: 0px;
+            margin: 0;
             margin-left: 0;
+            margin-right: 0;
         }
         .heading2{
           width: 100%;
@@ -704,13 +712,15 @@ body{
           width: 100%;
         }
         .upper-box{
-          padding: 0px;
-          left: 5%;
+          padding: 0;
+          left: 110%;
           top: 0;
           margin-left: 0;
+          width: 80%;
+          height: auto;
         }
         .lower-box{
-          left: 100%;
+          left: 5%;
           padding: 10px;
           bottom: 10%;
           margin: 0;
@@ -753,8 +763,11 @@ body{
            
             
         }
-        .habits,.heading4,.para4{
-            text-align: left;
+        .habits{
+         text-align: center;
+        }
+        .heading4,.para4{
+            text-align: center;
         }
         
        
@@ -795,6 +808,9 @@ body{
             padding: 5px;
             margin-left: 5px;
 
+        }
+        .btn4{
+          width: 100%;
         }
        
         .form{
